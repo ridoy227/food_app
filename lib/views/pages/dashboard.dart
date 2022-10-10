@@ -28,42 +28,57 @@ class DashBoard extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return  Scaffold(
-      
       extendBody: true,
-      bottomNavigationBar:  CurvedNavigationBar(
-        
-        buttonBackgroundColor: Colors.red,
-        
-        
-        backgroundColor: Colors.transparent,
-        index: 2,
-        
       
-        onTap: (value) {
-       
-            _searchPageController.changepage(value);
+      
+    
+      bottomNavigationBar:  
+      
         
+          SizedBox(
+            height: Get.height/25,
+            child: CurvedNavigationBar(
+                  color: Colors.white,
+             
+             height: Get.height/12,
+                  buttonBackgroundColor: Colors.red,          
+                  backgroundColor: Colors.transparent,
+                  index: 2,
 
-          
-          
-        },
-        height: Get.height/12,
-        
-        
-        items: const  [
-          Icon(Icons.home),
-          Icon(Icons.favorite_border),
-          Icon(Icons.search_outlined),
-          Icon(Icons.account_circle_outlined),
-          Icon(Icons.shopping_cart_outlined),
-        ]
-        
-        ),
-      body: SafeArea(
-        child: Obx((){
-          return _pages[_searchPageController.index.value];
-        }),
-      )
+                   
+                  
+                   
+                  onTap: (value) {
+                 
+                      _searchPageController.changepage(value);
+                  
+                   
+                    
+                    
+                  },
+                  
+                  
+                  
+                  items: const  [
+                    Icon(Icons.home),
+                    Icon(Icons.favorite_border),
+                    Icon(Icons.search_outlined),
+                    Icon(Icons.account_circle_outlined),
+                    Icon(Icons.shopping_cart_outlined),
+                  ]
+                  
+                  ),
+          ),
+      
+    
+       
+     
+     
+      body: Obx((){
+            return _pages[_searchPageController.index.value];
+          }),
+     
+      
         
      
       

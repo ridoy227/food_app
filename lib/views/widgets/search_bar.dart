@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/assets/assetslink.dart';
+import 'package:food_app/optional/assetslink.dart';
 import 'package:get/get.dart';
 
 class SearchBar extends StatelessWidget {
@@ -9,9 +9,9 @@ class SearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-              horizontal: 10
+              horizontal: 10,
             ),
-      height: Get.height/10,
+      height: Get.height/14,
       width: Get.width,
   
       child: Row(
@@ -19,7 +19,7 @@ class SearchBar extends StatelessWidget {
         children: [
           Container(
             
-            height:Get.height/12,
+            height:Get.height/18,
             width: Get.width/1.4,
             child: TextField(
               
@@ -42,7 +42,7 @@ class SearchBar extends StatelessWidget {
                     width: 3
                   )
                 ),
-                hintText: 'Search',
+                
                 
               ),
             ),

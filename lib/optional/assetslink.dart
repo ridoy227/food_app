@@ -9,5 +9,4 @@ class AssetsLink{
   String srimpimage = 'assets/images/srimp_image.jpg';
   String swarmaimage = 'assets/images/swarma_image.jpg';
   String backgroundicon = 'assets/images/background.png';
-
 }

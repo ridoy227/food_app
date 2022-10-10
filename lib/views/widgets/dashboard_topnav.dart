@@ -10,7 +10,7 @@ class TopNav extends StatelessWidget {
                     horizontal: 10
                   ),
                  
-                  height: Get.height/10,
+                  height: Get.height/14,
                   width: Get.width,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
