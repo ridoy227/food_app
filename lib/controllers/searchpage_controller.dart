@@ -9,6 +9,13 @@ class SearchPageController extends GetxController{
     PopularItems(AssetsLink().pastaicon, 'Pasta', 'Maxican Pasta', '6', '4.5'),
     PopularItems(AssetsLink().pizzaicon, 'Slice Pizza', 'Vagitable Pizza ', '1.8', '4.5'),
   ];
+  final List<PopularItems> popularfooddetails = [
+    PopularItems(AssetsLink().burgerimage, 'Burger', 'Beef Burger with onion', '3', '4.5'),
+    PopularItems(AssetsLink().chickenimage, 'Chikcen', 'Chicken Curry', '6', '4.5'),
+    PopularItems(AssetsLink().srimpimage, 'Srimp', 'Srimp Items', '1.8', '4.5'),
+    PopularItems(AssetsLink().swarmaimage, 'Swarma', 'Chicken Swarma with vagitable', '3', '4.5')
+  ];
+
 
 
   

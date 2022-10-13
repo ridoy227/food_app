@@ -8,7 +8,7 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
+      padding:const EdgeInsets.symmetric(
               horizontal: 10,
             ),
       height: Get.height/14,
@@ -17,7 +17,7 @@ class SearchBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
+          SizedBox(
             
             height:Get.height/18,
             width: Get.width/1.4,
@@ -26,19 +26,19 @@ class SearchBar extends StatelessWidget {
               decoration: InputDecoration(
                 
                 
-               prefixIcon: Icon(Icons.search_outlined,color: Colors.amberAccent,),
+               prefixIcon: const Icon(Icons.search_outlined,color: Colors.pink,),
                 enabledBorder: OutlineInputBorder(
                   
                   borderRadius: BorderRadius.circular(Get.width/5),
                   borderSide:const BorderSide(
-                    color: Colors.amberAccent,
+                    color: Colors.pink,
                     width: 3
                   )
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(Get.width/5),
                   borderSide:const BorderSide(
-                    color: Colors.amberAccent,
+                    color: Colors.amber,
                     width: 3
                   )
                 ),
